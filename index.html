@@ -1,0 +1,15 @@
+<!-- The user types the name of the file here -->
+<input type="text" id="userInput" placeholder="Enter file name (e.g. index)">
+
+<!-- When clicked, the function runs -->
+<button onclick="goToFile()">Go to File</button>
+
+<script>
+function goToFile() {
+    var fileName = document.getElementById('userInput').value;
+    if (fileName) {
+        // Redirects to fileName.html in the same directory
+        window.location.href = fileName;
+    }
+}
+</script>
